@@ -3,25 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gelas Nähstudio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Gela's Nähstudio</title>
+  <meta name="description" content="Gelas Nähstudio: Historische Kleidung für Friedberger Zeit, Änderungen und Reparaturen an Dirndl, Mode und mehr">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #d4a5a5;
+      color: white;
+      padding: 2rem;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center; /* vertikal zentrieren */
+      padding: 1rem 2rem;
+      background-color: #fae4c2;
+      color: #8a4b31;
+    }
+
+    .header-logo {
+      width: 300px; /* oder gewünschte Breite */
+      height: auto;
+      margin-right: 5rem; /* Abstand zwischen Bild und Text */
+    }
+
+    .header-text h1 {
+      font-family: 'Great Vibes', cursive;
+      margin: 1;
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    .header-text p {
+      margin: 0.2rem 0 0 0;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    /* Bildbereich mit beigem Hintergrund */
+    .hero-image {
+      /*background-color: #f5f0e1; /* beige */*/
+      padding: 2rem 0;
+    }
+
+    .hero-image img {
+      max-width: 40%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Zwei-Spalten-Bereich */
+    .two-columns {
+      display: flex;
+      justify-content: center; /* container zentrieren */
+      gap: 3rem; /* Abstand zwischen Spalten */
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+
+    .column {
+      width: flex-wrap; /* feste Breite */
+      text-align: left;
+      padding: 0 2rem;
+    }
+
+    .column ul li {
+      margin-bottom: 0.8rem; /* Abstand unter jedem Listenpunkt */
+    }
+
+  .gallery-title {
+    margin-top: 1rem;   /* Abstand oberhalb der Galerie */
+    margin-bottom: 3.3rem; /* Abstand zwischen Überschrift und Galerie */
+  }
+
+    .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: 80%;
+  height: auto;
+  border-radius: 50px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+    footer {
+      background-color: #fae4c2;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header-logo {
+    margin-bottom: 0.5rem;
+  }
+}
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Gelas Nähstudio</h1>
-    <p>Individuelle Näharbeiten mit Liebe zum Detail</p>
-  </header>
+<header class="site-header">
+  <img src="bilder/logo.png" alt="Gelas Nähstudio Logo" class="header-logo">
+  <div class="header-text">
+    <h1>Gela's Nähstudio</h1>
+    <p>Änderungsschneiderei</p>
+  </div>
+</header>
+
 
   <main>
-    <section>
-      <h2>Willkommen</h2>
-      <p>Hier entsteht die Webseite von <strong>Gelas Nähstudio</strong>. 
-         Bald gibt es hier Informationen zu meinen Angeboten und Kontaktmöglichkeiten.</p>
-    </section>
+<!--     <h2>Willkommen!</h2>
+    <p>Hier entsteht die Webseite von Gela's Nähstudio.</p>
+    <p>Bald finden Sie hier mehr Informationen zu unseren Leistungen.</p> -->
+
+    <!-- Hero-Bild mit beigem Hintergrund -->
+<!--     <div class="hero-image">
+      <img src="bilder/myHeroImage.png" alt="Gela's Nähstudio" />
+    </div> -->
+
+    <!-- Zwei Spalten: Leistungen + Kontakt -->
+    <div class="two-columns">
+      <div class="column">
+        <h3>Leistungen</h3>
+        <ul>
+          <li>Allerlei Reparaturen & Änderungen</li>
+          <li>Hosen, Kleider, Röcke und Ärmel kürzen</li>
+          <li>Dirndl anpassen, inkl. Spitze und Schürze</li>
+          <li>Gardienen und Vorhänge anpassen</li>
+          <li>Kleidung nähen für die 
+            <a href="https://www.friedberger-zeit.de" target="_blank" rel="noopener">Friedberger Zeit</a></li>
+          <li>Individuelle Nähprojekte</li>
+          <li> Und vieles mehr auf Anfrage</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h3>Kontakt</h3>
+        <p>Angela Fendt</p>
+        <p>Hagelbach 12<br>86316 Friedberg</p>
+
+        <p style="margin-top:2rem;"><strong>Telefon und WhatsApp: 0157 89342034‬</strong></p>
+        <p style="margin-top:2rem;">E-Mail: gelafendt@gmail.com</p>
+        <p style="margin-top:2rem;"><strong>Termine nach Vereinbarung.</strong></p>
+      </div>
+    </div>
   </main>
 
+<!-- <h3 class="gallery-title">Bildergalerie</h3> -->
+<!--   <div class="gallery">
+    <img src="bilder/bild1.png" alt="Beispielbild 1">
+    <img src="bilder/bild2.png" alt="Beispielbild 2">
+    <img src="bilder/bild3.png" alt="Beispielbild 3">
+  </div> -->
+
+
+
   <footer>
-    <p>© 2025 Gelas Nähstudio</p>
+    <p>&copy; 2025 Gela's Nähstudio |
+      <a href="impressum.html">Impressum</a> |
+      <a href="datenschutz.html">Datenschutzerklärung</a>
+    </p>
   </footer>
 </body>
 </html>
