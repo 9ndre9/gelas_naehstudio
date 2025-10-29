@@ -1,0 +1,189 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #d4a5a5;
+      color: white;
+      padding: 2rem;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center; /* vertikal zentrieren */
+      padding: 1rem 2rem;
+      background-color: #fae4c2;
+      color: #8a4b31;
+    }
+
+    .header-logo {
+      width: 300px; /* oder gewünschte Breite */
+      height: auto;
+      margin-right: 5rem; /* Abstand zwischen Bild und Text */
+    }
+
+    .header-text h1 {
+      font-family: 'Great Vibes', cursive;
+      margin: 1;
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    .header-text p {
+      margin: 0.2rem 0 0 0;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    /* Bildbereich mit beigem Hintergrund */
+    .hero-image {
+      /*background-color: #f5f0e1; /* beige */*/
+      padding: 2rem 0;
+    }
+
+    .hero-image img {
+      max-width: 40%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .main-nav {
+      background-color: #8a4b31;  /* warme Farbe passend zum Stil */
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex; /* horizontale Ausrichtung */
+      gap: 2rem; /* Abstand zwischen Menüpunkten */
+    }
+
+    .main-nav li {
+      display: inline;
+    }
+
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+.main-nav a:hover {
+  color: #fae4c2; /* heller Ton beim Hover */
+}
+
+
+
+    /* Zwei-Spalten-Bereich */
+    .two-columns {
+      display: flex;
+      justify-content: center; /* container zentrieren */
+      gap: 3rem; /* Abstand zwischen Spalten */
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+
+    .column {
+      width: flex-wrap; /* feste Breite */
+      text-align: left;
+      padding: 0 2rem;
+    }
+
+    .column ul li {
+      margin-bottom: 0.8rem; /* Abstand unter jedem Listenpunkt */
+    }
+
+  .gallery-title {
+    margin-top: 1rem;   /* Abstand oberhalb der Galerie */
+    margin-bottom: 3.3rem; /* Abstand zwischen Überschrift und Galerie */
+  }
+
+    .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+}
+
+.gallery img {
+  width: auto;
+  height: 150px;
+  border-radius: 50px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+/* 💡 Unterschiedliche Größen für Hoch- und Querformat */
+.gallery-portrait img {
+  height: 25rem; /* höher */
+}
+
+.gallery-landscape img {
+  height: 8rem; /* flacher */
+}
+
+
+.gallery img:hover {
+  transform: scale(1.5);
+}
+
+
+    footer {
+      background-color: #fae4c2;
+      padding: 2rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header-logo {
+    margin-bottom: 0.5rem;
+  }
+}
+  
+.center-table {
+  margin: 0 auto;           /* zentriert horizontal */
+  border-collapse: collapse;
+  width: 60%;               /* oder max-width: 600px; */
+  max-width: 600px;
+}
+.center-table th,
+.center-table td {
+  padding: 8px;
+  text-align: left;
+  border: none;
+}
